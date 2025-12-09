@@ -1,0 +1,146 @@
+.profile-container {
+    padding: var(--space-6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    overflow-y: auto;
+}
+
+.profile-header-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-name {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-1);
+}
+
+.profile-contact {
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.profile-meta {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--space-2);
+}
+
+.meta-status {
+    display: inline-flex;
+    padding: var(--space-1) var(--space-3);
+    border-radius: 9999px;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Reusing status colors from Clients.css via shared classes or redefined here if scoped. 
+   For simplicity, we'll assume global utility classes or inline styles for now, 
+   but let's define specific ones for clarity. */
+.meta-status.booked {
+    background-color: rgba(52, 211, 153, 0.2);
+    color: var(--accent-emerald);
+}
+
+.meta-status.flagged {
+    background-color: rgba(251, 113, 133, 0.2);
+    color: var(--accent-crimson);
+}
+
+.meta-status.lead {
+    background-color: rgba(148, 163, 184, 0.2);
+    color: var(--text-tertiary);
+}
+
+.meta-financial {
+    font-size: var(--text-xs);
+    color: var(--text-secondary);
+}
+
+.financial-value {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-left: var(--space-1);
+}
+
+.financial-positive {
+    color: var(--accent-emerald);
+}
+
+.financial-negative {
+    color: var(--accent-crimson);
+}
+
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+    .profile-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.detail-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+}
+
+.detail-title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.detail-text {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.detail-row {
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-2);
+}
+
+.detail-value {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.reference-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3);
+}
+
+.reference-placeholder {
+    background-color: var(--bg-app);
+    border-radius: var(--radius-md);
+    height: 80px;
+    border: 1px dashed var(--border-highlight);
+}

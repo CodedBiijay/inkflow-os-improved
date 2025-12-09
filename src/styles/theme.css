@@ -1,0 +1,94 @@
+:root {
+  /* -- Colors -- */
+  /* Backgrounds */
+  --bg-app: #020617;
+  /* DeepestSlate */
+  --bg-panel: #0f172a;
+  /* DarkSlate */
+  --bg-card: #1e293b;
+  /* Slate */
+  --bg-surface: #334155;
+  /* LightSlate */
+
+  /* Text */
+  --text-primary: #f8fafc;
+  /* White/Ice */
+  --text-secondary: #94a3b8;
+  /* Muted Blue-Grey */
+  --text-tertiary: #64748b;
+  /* Darker Muted */
+
+  /* Accents */
+  --accent-gold: #fbbf24;
+  --accent-gold-dim: #b45309;
+  --accent-emerald: #34d399;
+  --accent-crimson: #fb7185;
+  --accent-primary: #38bdf8;
+  /* Sky Blue - keeping a tech feel */
+
+  /* Borders */
+  --border-subtle: #1e293b;
+  --border-default: #334155;
+  --border-highlight: #475569;
+
+  /* -- Typography -- */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  /* Introducing a serif for a "Tattoo Studio" vibe if user had it, but sticking to sans for requested "clean" look unless specified. Let's keep it sans for now to be safe, maybe add serif later. Using sans for now. */
+
+  /* -- Spacing -- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+
+  /* -- Effects -- */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* -- Transitions -- */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme='light'] {
+  /* -- Colors (Light Mode) -- */
+  /* Backgrounds */
+  --bg-app: #f1f5f9;
+  /* Slate 100 */
+  --bg-panel: #ffffff;
+  /* White */
+  --bg-card: #ffffff;
+  /* White */
+  --bg-surface: #e2e8f0;
+  /* Slate 200 */
+
+  /* Text */
+  --text-primary: #0f172a;
+  /* Slate 900 */
+  --text-secondary: #475569;
+  /* Slate 600 */
+  --text-tertiary: #94a3b8;
+  /* Slate 400 */
+
+  /* Borders */
+  --border-subtle: #e2e8f0;
+  /* Slate 200 */
+  --border-default: #cbd5e1;
+  /* Slate 300 */
+  --border-highlight: #94a3b8;
+  /* Slate 400 */
+
+  /* Shadows (darker for light mode) */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+}
