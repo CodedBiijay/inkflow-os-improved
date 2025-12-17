@@ -121,3 +121,4 @@ dist-ssr
 
 # OS X
 .DS_Store
+.vercel
